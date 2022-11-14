@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/87509e6542.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./tailwind/output.css">
     <title>Social tree</title>
 </head>
-<body>
-    <header class="profilePic">
-        <div class="borderRound">
-            <img class="profilePhoto" src="../assets/foto3x4.PNG" alt="profile photo">
-        </div>
-        <h1 class="handle">Guilherme Silva</h1>
+<body class="bg-bgPink ">
+    <header class="flex flex-col items-center">
+        <img class="rounded-full w-52" src="../assets/foto3x4.PNG" alt="profile photo">
+        <h1 >Guilherme Silva</h1>
     </header>
-    <div class="linksAndIcons">
-        <button onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/HTML','_blank')" class="linkOne">HTML Documentation</button>
-        <button onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/CSS','_blank')" class="linkTwo">CSS Documentation</button>
-        <button onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/javascript','_blank')" class="linkThree">Javascript Documentation</button>
-        <div class="icons">
+    <div>
+        <button onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/HTML','_blank')" >HTML Documentation</button>
+        <button onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/CSS','_blank')">CSS Documentation</button>
+        <button onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/javascript','_blank')">Javascript Documentation</button>
+        <div>
             <a href="https://github.com/guilhermebpsilva" target="_blank"><i id="github" class="fa-brands fa-github fa-2xl"></i></a>
             <a href="https://www.linkedin.com/in/gbps/" target="_blank"><i id="linkedin" class="fa-brands fa-linkedin-in fa-2xl"></i></a>
             <a href="https://www.instagram.com/guilhermebpsilva/" target="_blank"><i id="instagram" class="fa-brands fa-instagram fa-2xl"></i></a>
@@ -28,8 +26,8 @@
             <i id="youtube" class="fa-brands fa-youtube fa-2xl"></i> -->
         </div>
     </div>
-    <footer class="footer">
-        <div class="divFloat">
+    <footer>
+        <div>
             <p>Make you own tree!</p>
         </div>
     </footer>
