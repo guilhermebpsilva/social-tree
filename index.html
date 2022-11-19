@@ -9,27 +9,24 @@
     <link rel="stylesheet" href="./tailwind/output.css">
     <title>Social tree</title>
 </head>
-<body class="bg-bgPink ">
-    <header class="flex flex-col items-center">
-        <img class="rounded-full w-52" src="../assets/foto3x4.PNG" alt="profile photo">
-        <h1 >Guilherme Silva</h1>
+<body class="bg-bgWhite">
+    <header class="flex flex-col items-center my-5">
+        <div class="bg-profilePic rounded-full w-44 h-44 border-solid border-4 border-mainPink bg-cover m-8 "></div>
+        <h1 class="text-base" >Guilherme Silva</h1>
     </header>
-    <div>
-        <button onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/HTML','_blank')" >HTML Documentation</button>
-        <button onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/CSS','_blank')">CSS Documentation</button>
-        <button onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/javascript','_blank')">Javascript Documentation</button>
-        <div>
+    <div class="flex flex-col justify-center " >
+        <button class="btnLink " onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/HTML','_blank')" >HTML Documentation</button>
+        <button class="btnLink " onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/CSS','_blank')">CSS Documentation</button>
+        <button class="btnLink " onclick="window.open('https://developer.mozilla.org/en-US/docs/Web/javascript','_blank')">Javascript Documentation</button>
+        <button class="btnLink mb-10 " onclick="window.open('https://tailwindcss.com/docs/installation','_blank')">Tailwind Documentation</button>
+        <div class="flex justify-evenly min-w-link m-auto ">
             <a href="https://github.com/guilhermebpsilva" target="_blank"><i id="github" class="fa-brands fa-github fa-2xl"></i></a>
             <a href="https://www.linkedin.com/in/gbps/" target="_blank"><i id="linkedin" class="fa-brands fa-linkedin-in fa-2xl"></i></a>
             <a href="https://www.instagram.com/guilhermebpsilva/" target="_blank"><i id="instagram" class="fa-brands fa-instagram fa-2xl"></i></a>
-            <!-- <i id="twitter" class="fa-brands fa-twitter fa-2xl"></i>
-            <i id="youtube" class="fa-brands fa-youtube fa-2xl"></i> -->
+            <a href="" class="hidden" ><i id="twitter" class="fa-brands fa-twitter fa-2xl"></i></a> 
+            <a href="" class="hidden" ><i id="youtube" class="fa-brands fa-youtube fa-2xl"></i></a>
         </div>
     </div>
-    <footer>
-        <div>
-            <p>Make you own tree!</p>
-        </div>
-    </footer>
+    <footer class="bg-mainPink w-full h-10 fixed bottom-0 text-center font-poppins" > Developed by Guilherme Silva </footer>
 </body>
 </html>

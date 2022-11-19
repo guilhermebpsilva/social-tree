@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btnLink {
+        @apply border-solid border-2 border-mainPink w-fit m-auto px-5 py-1 rounded-md mb-4 min-w-link font-poppins font-semibold text-mainPink hover:bg-mainPink hover:text-bgWhite
+    }
+}
